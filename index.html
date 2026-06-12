@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte - Sementes Sustentáveis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Botão de Acessibilidade - Canto Superior Direito -->
+    <div class="accessibility-menu">
+        <button id="accessBtn" class="access-btn" aria-label="Menu de Acessibilidade">
+            ♿ Acessibilidade
+        </button>
+        <div id="accessPanel" class="access-panel">
+            <h3>♿ Acessibilidade</h3>
+            <button id="readPageBtn" class="access-option">🔊 Ler página inteira</button>
+            <button id="stopReadBtn" class="access-option">⏹️ Parar leitura</button>
+            <div class="divider"></div>
+            <button id="increaseFont" class="access-option">🔍 Aumentar fonte (A+)</button>
+            <button id="decreaseFont" class="access-option">🔍 Diminuir fonte (A-)</button>
+            <button id="resetFont" class="access-option">🔄 Resetar fonte</button>
+            <div class="divider"></div>
+            <button id="darkMode" class="access-option">🌙 Modo escuro</button>
+            <button id="lightMode" class="access-option">☀️ Modo claro</button>
+            <button id="resetMode" class="access-option">🔄 Resetar tema</button>
+            <div class="divider"></div>
+            <button id="closePanel" class="access-option close-btn">✖️ Fechar</button>
+        </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <div class="logo-circle">🌱</div>
+                <div>
+                    <h1>Agro Forte</h1>
+                    <p>Futuro Sustentável</p>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#sementes">Sementes</a></li>
+                <li><a href="#calculadora">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Agro Forte, Futuro Sustentável</h1>
+                <p>Equilíbrio perfeito entre produção agrícola e preservação ambiental</p>
+                <a href="#calculadora" class="btn-primary">Calcular Sementes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre - Sementes do Paraná (TEXTO MELHORADO) -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sementes Mais Usadas no Paraná</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>O <strong>Paraná</strong> é um dos pilares do agronegócio brasileiro, sendo o <strong>terceiro maior produtor agrícola do país</strong> e líder nacional na produção de trigo e feijão. Com mais de <strong>5,7 milhões de hectares</strong> cultivados anualmente, o estado se destaca pelo uso de tecnologias avançadas e sementes de alta performance que garantem produtividade recorde.</p>
+                    
+                    <p>As sementes mais utilizadas nas grandes plantações paranaenses passam por rigorosos processos de <strong>melhoramento genético</strong>, que incluem:</p>
+                    <ul class="beneficios">
+                        <li> <strong>Milho Híbrido</strong> - Resultado do cruzamento controlado entre linhagens geneticamente superiores, garantindo maior vigor, uniformidade e resistência a pragas</li>
+                        <li> <strong>Soja Transgênica</strong> - Modificada geneticamente para resistir a herbicidas específicos e insetos, aumentando a produtividade em até 30%</li>
+                        <li> <strong>Trigo Certificado</strong> - Sementes com genética avançada para resistência à ferrugem e adaptação ao clima subtropical paranaense</li>
+                        <li> <strong>Feijão</strong> - Variedades melhoradas com ciclo precoce e resistência a doenças como a antracnose</li>
+                    </ul>
+                    
+                    <p><strong>💡 Tecnologia que transforma:</strong> O Paraná investe pesado em pesquisa genética. Atualmente, mais de <strong>85% das lavouras</strong> utilizam sementes geneticamente aprimoradas, resultando em safras até <strong>40% mais produtivas</strong> que há uma década, com menor uso de defensivos agrícolas e maior sustentabilidade.</p>
+                </div>
+                <div class="sobre-imagem">
+                    <img src="agricultura-sustentavel.webp" alt="Plantação no Paraná">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Tipos de Sementes -->
+    <section id="sementes" class="sementes">
+        <div class="container">
+            <h2>Sementes para Grandes Produções</h2>
+            <div class="cards-sementes">
+                <div class="card">
+                    <div class="card-icon">🌽</div>
+                    <h3>Milho Híbrido</h3>
+                    <p>Alta produtividade, resistente à estiagem e a pragas. Ideal para silagem e grãos.</p>
+                    <span class="preco">R$ 450,00/saco</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Soja Transgênica</h3>
+                    <p>Resistente a herbicidas, alto teor de proteína e adaptada ao clima subtropical.</p>
+                    <span class="preco">R$ 380,00/saco</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌾</div>
+                    <h3>Trigo Certificado</h3>
+                    <p>Grãos premium para panificação, com alta qualidade e resistência a doenças.</p>
+                    <span class="preco">R$ 520,00/saco</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🫘</div>
+                    <h3>Feijão</h3>
+                    <p>Sementes de alto vigor, produtividade garantida para as regiões Norte e Oeste.</p>
+                    <span class="preco">R$ 350,00/saco</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Calculadora de Sementes -->
+    <section id="calculadora" class="calculadora">
+        <div class="container">
+            <h2>📊 Calculadora de Sementes</h2>
+            <p>Calcule a quantidade ideal de sementes para sua produção no Paraná</p>
+            
+            <div class="calculadora-container">
+                <div class="form-group">
+                    <label for="cultura">Tipo de Cultura:</label>
+                    <select id="cultura">
+                        <option value="milho">Milho Híbrido</option>
+                        <option value="soja">Soja Transgênica</option>
+                        <option value="trigo">Trigo Certificado</option>
+                        <option value="feijao">Feijão</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="area">Área (hectares):</label>
+                    <input type="number" id="area" placeholder="Ex: 100" step="0.1">
+                </div>
+
+                <div class="form-group">
+                    <label for="densidade">Densidade de Plantio (sementes/ha):</label>
+                    <input type="number" id="densidade" placeholder="Sementes por hectare">
+                </div>
+
+                <button onclick="calcularSementes()" class="btn-calc">Calcular Necessidade</button>
+
+                <div id="resultado" class="resultado" style="display: none;">
+                    <h3>📋 Resultado da Produção</h3>
+                    <p><strong>Quantidade total de sementes:</strong> <span id="totalSementes"></span> sementes</p>
+                    <p><strong>Sacos necessários (60.000 sementes/saco):</strong> <span id="totalSacos"></span> sacos</p>
+                    <p><strong>Custo total estimado:</strong> <span id="custoTotal"></span></p>
+                    <p class="sustentavel">🌱 Essa produção compensa o equivalente a <span id="arvores"></span> árvores em créditos de carbono!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌱 Agro Forte</h3>
+                    <p>Produzindo o futuro com responsabilidade ambiental no Paraná</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sementes no Paraná</h3>
+                    <p>🌽 Milho: 2ª maior produção do Brasil</p>
+                    <p>🌱 Soja: liderança nacional</p>
+                    <p>🌾 Trigo: maior produtor brasileiro</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sustentabilidade</h3>
+                    <p>✅ Plantio direto</p>
+                    <p>✅ Rotação de culturas</p>
+                    <p>✅ Recuperação de nascentes</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Agro Forte - Equilíbrio entre produção e meio ambiente | Paraná - Brasil</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

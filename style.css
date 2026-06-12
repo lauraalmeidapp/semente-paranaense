@@ -1,0 +1,573 @@
+/* Reset e Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #1a3a1a; /* verde mais escuro para texto */
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho - verde mais escuro */
+header {
+    background: linear-gradient(135deg, #0d2818 0%, #1a4a2a 100%);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ========== LOGO CIRCULAR ========== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-circle {
+    width: 50px;
+    height: 50px;
+    background: rgba(168, 230, 207, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(168, 230, 207, 0.5);
+}
+
+.logo-circle:hover {
+    transform: scale(1.05);
+    background: rgba(168, 230, 207, 0.3);
+    border-color: #a8e6cf;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.logo p {
+    font-size: 0.75rem;
+    opacity: 0.9;
+    margin-top: 2px;
+}
+/* ========== FIM LOGO ========== */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a8e6cf;
+    transform: translateY(-2px);
+}
+
+/* Seção Hero - verde mais escuro */
+.hero {
+    background: linear-gradient(135deg, #0d2818 0%, #1a4a2a 100%);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease 0.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #f4a261;
+    color: #0d2818;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease 0.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.btn-primary:hover {
+    background: #e76f51;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.sobre h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #0d2818;
+}
+
+.sobre-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.sobre-texto p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.beneficios {
+    list-style: none;
+}
+
+.beneficios li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Seção Sementes */
+.sementes {
+    padding: 80px 0;
+    background: white;
+}
+
+.sementes h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #0d2818;
+}
+
+.cards-sementes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0d2818;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.preco {
+    display: inline-block;
+    background: #1a4a2a;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Calculadora */
+.calculadora {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+}
+
+.calculadora h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0d2818;
+}
+
+.calculadora > .container > p {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.calculadora-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #0d2818;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #1a4a2a;
+}
+
+.btn-calc {
+    width: 100%;
+    background: #1a4a2a;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-calc:hover {
+    background: #0d2818;
+    transform: translateY(-2px);
+}
+
+.resultado {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #e8f5e9;
+    border-radius: 10px;
+    animation: slideIn 0.5s ease;
+}
+
+.resultado h3 {
+    color: #0d2818;
+    margin-bottom: 1rem;
+}
+
+.resultado p {
+    margin-bottom: 0.5rem;
+}
+
+.sustentavel {
+    color: #1a4a2a;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid #a8e6cf;
+}
+
+/* Rodapé - cores mais escuras */
+footer {
+    background: #0a1a0a;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    color: #a8e6cf;
+}
+
+.footer-section p {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #1a4a2a;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .sobre-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .cards-sementes {
+        grid-template-columns: 1fr;
+    }
+    
+    .logo-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 1.4rem;
+    }
+    
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+}
+
+/* ========== BOTÃO DE ACESSIBILIDADE ========== */
+
+.accessibility-menu {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 2000;
+}
+
+.access-btn {
+    background: #0d2818;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 2001;
+    position: relative;
+}
+
+.access-btn:hover {
+    background: #1a4a2a;
+    transform: scale(1.05);
+}
+
+.access-panel {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 260px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 2002;
+    border: 2px solid #0d2818;
+}
+
+.access-panel.show {
+    display: block;
+    animation: slideInRight 0.3s ease;
+}
+
+.access-panel h3 {
+    color: #0d2818;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.access-option {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+    transition: all 0.2s ease;
+}
+
+.access-option:hover {
+    background: #c8e6c9;
+    transform: translateX(5px);
+}
+
+.divider {
+    height: 1px;
+    background: #ddd;
+    margin: 10px 0;
+}
+
+.close-btn {
+    background: #e76f51;
+    color: white;
+    text-align: center;
+}
+
+.close-btn:hover {
+    background: #d35c3a;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ========== CLASSES DINÂMICAS PARA ACESSIBILIDADE ========== */
+
+/* Modo escuro */
+body.dark-mode {
+    background-color: #1a1a2e !important;
+    color: #eee !important;
+}
+
+body.dark-mode .sobre,
+body.dark-mode .sementes {
+    background-color: #16213e !important;
+    color: #eee !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .calculadora-container,
+body.dark-mode .access-panel {
+    background-color: #0f3460 !important;
+    color: #eee !important;
+}
+
+body.dark-mode .card p,
+body.dark-mode .sobre-texto p {
+    color: #ddd !important;
+}
+
+body.dark-mode .btn-calc {
+    background: #e94560 !important;
+}
+
+body.dark-mode .preco {
+    background: #e94560 !important;
+}
+
+/* Modo claro com fundo bege */
+body.light-mode {
+    background-color: #fff9f0 !important;
+    color: #3d2b1f !important;
+}
+
+body.light-mode .sobre,
+body.light-mode .sementes {
+    background-color: #fff4e4 !important;
+}
+
+body.light-mode .card,
+body.light-mode .calculadora-container {
+    background-color: #ffe8cc !important;
+}
